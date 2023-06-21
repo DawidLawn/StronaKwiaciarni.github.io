@@ -1,0 +1,114 @@
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/* Resetuj style domyślne */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Ustawienia globalne */
+  html, body {
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Styl dla elementów HTML */
+  h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  
+  /* Klasy CSS */
+header{
+    background: linear-gradient(220deg, #f9d3d3, #ffffff);
+    width:100vw;
+    height:18vh;
+    border-bottom: 1px solid #111;
+}
+
+  .logo-img {
+    border-radius: 90%;
+    width:150px;
+    float:left;
+  }
+
+  #menu{
+    display: inline-flex;
+    gap:20px;
+    list-style: none;
+    font-family: 'Lobster', cursive;
+    float:left;
+    position: relative;
+    top:8vh;
+    left:55vw;
+    font-size:20px;
+  }
+
+  #menu li{
+    cursor: pointer;
+  }
+
+  #menu #signIn{
+    border:0px solid #333;
+    padding:6px;
+    position:relative;
+    top:-10px;
+    transition:1s;
+  }
+
+  #menu li::after{
+    content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  margin-top: 5px;
+  transition: 1s ease-in-out;
+  }
+
+  #menu li:hover::after{
+    width:100%;
+  }
+
+  #menu #signIn::before{
+    content: "";
+    transform: rotate(270deg);
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  position:relative;
+  top:15px; left:50px;
+  transition: 1s ease;
+  
+  }
+
+  #menu #signIn::after{
+    content: "";
+  display: block;
+  width: 0%;
+  height: 3px;
+  background-color: black;
+  margin-top: 5px;
+  transition: 1s ease-in-out;
+  }
+
+  #menu #signIn:hover::after{
+    width:100%;
+  }
+  #menu #signIn:hover::before{
+    width:60%;
+    transition-delay: 0.5s;
+  }
+
+  
+
